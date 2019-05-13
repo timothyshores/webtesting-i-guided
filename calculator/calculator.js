@@ -2,6 +2,6 @@ module.exports = {
     add,
 };
 
-function add() {
-    return null;
+function add(num1,  num2) {
+    return num1 + num2;
 }
