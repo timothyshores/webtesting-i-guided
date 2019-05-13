@@ -3,9 +3,9 @@ module.exports = {
 };
 
 function add(args) {
-    const numbers = Array.isArray(args) ? args : [...arguments];
+    const array = Array.isArray(args) ? args : [...arguments];
 
-    return numbers.reduce((previous, current) =>
+    return array.reduce((previous, current) =>
         previous + current, 0
     );
 }
