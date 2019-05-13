@@ -1,7 +1,11 @@
 module.exports = {
-  add,
+    add,
 };
 
-function add() {
-  return null;
+function add(args) {
+    const array = Array.isArray(args) ? args : [...arguments];
+
+    return array.reduce((previous, current) =>
+        previous + current, 0
+    );
 }
